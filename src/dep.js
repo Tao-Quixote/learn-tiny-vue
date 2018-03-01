@@ -19,8 +19,12 @@ Dep.target = null
 
 /**
  * Add a directive subscriber.
+ * 
+ * @todo 添加订阅
  *
  * @param {Directive} sub
+ * @todo 注意这里的 sub 是 Directive 类型，即添加的订阅都是 “指令”，
+ * @todo 所以下面的 notify() 中也是通过调用 指令 的 update() 方法来更新 Dom 的
  */
 
 Dep.prototype.addSub = function (sub) {
@@ -29,6 +33,9 @@ Dep.prototype.addSub = function (sub) {
 
 /**
  * Remove a directive subscriber.
+ * 
+ * @todo 移除订阅
+ * @todo 注意这里的 sub 是 Directive 类型，即添加的订阅都是 “指令”
  *
  * @param {Directive} sub
  */
@@ -47,6 +54,8 @@ Dep.prototype.depend = function () {
 
 /**
  * Notify all subscribers of a new value.
+ * 
+ * @todo 通知 vm.$options.data 中某个 key 的所有订阅，有新值，注意更新
  */
 
 Dep.prototype.notify = function () {
