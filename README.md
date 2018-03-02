@@ -1,4 +1,28 @@
-# tiny-vue
+# REAME
+
+**该仓库中 tiny-vue 相关的代码来自 [tiny-vue](https://github.com/lihongxun945/tiny-vue)。源码所有权归原作者所有。**
+
+**该仓库中 `src/videos/` 目录下的视频来自一个培训讲师，在这里对该视频作者以及该讲师表示感谢；如果该视频作者对于这里的使用有任何问题，请联系我: <web.taox@gmail.com>。如果侵犯了作者的权益，请联系我删除视频。**
+
+该仓库的目的是保存自己在阅读源码过程中的心得体会。
+
+在阅读源码的过程中，对于不好理解的地方，使用 <span style="color: red;">@todo</span> 添加了注释。
+
+## 阅读源码顺序
+
+从 `src/vue.js` 文件开始阅读。推荐在阅读源码的过程中配合作者在 [CSDN 博客中的博文](http://blog.csdn.net/lihongxun945/article/category/7259172) 进行阅读；并且推荐配合 `src/videos/` 目录下的视频，以便于更深入的理解。
+
+* 1、从阅读 `src/Vue.js` 文件入手，配合 博文[八小时实现迷你版vuejs之二：vuejs 架构](http://blog.csdn.net/lihongxun945/article/details/78396197)、视频 `src/videos/why.mp4`
+* 2、博文[八小时实现迷你版vuejs三：实现数据响应化](http://blog.csdn.net/lihongxun945/article/details/78415262)、 `src/state.js`、`src/videos/state.mp4` 配合阅读
+* 3、`src/observe.js`、`src/dep.js` 配合 `src/videos/dep.mp4` 阅读
+* 未完...
+
+## LEARNER INFO 🐌
+
+* [GitHub](https://github.com/Tao-Quixote)
+* Email: <web.taox@gmail.com>
+
+下面是源仓库中的 README 内容：
 
 ## What is this?
 
