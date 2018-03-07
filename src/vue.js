@@ -11,17 +11,27 @@ class Vue {
    * 初始化的入口
    */
   init (options) {
+    /**
+     * @todo 存放指令
+     */
     this._directives = []
+    /**
+     * @todo 存放 watchers
+     */
     this._watchers = []
 
     const el = document.querySelector(options.el)
 
     options._containerAttrs = toArray(el.attributes) // get attrs of el
 
+    /**
+     * @todo 将 options 中 methods 对象中存放的所有方法，
+     * @todo 设置到 Vue 实例上作为一个属性，这里的 this 指向 Vue 实例
+     */
     this.$options = options
     // merge options
     for (let k in options.methods) {
-      this[k] = options.methods[k]
+      this[k] = options.methods[k] // 循环遍历设置方法到 Vue 实例
     }
     /**
      * @todo _initState 方法是通过 mixin 的方式，
