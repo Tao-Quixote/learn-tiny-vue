@@ -12,9 +12,9 @@
 
 从 `src/vue.js` 文件开始阅读。推荐在阅读源码的过程中配合作者在 [CSDN 博客中的博文](http://blog.csdn.net/lihongxun945/article/category/7259172) 进行阅读；并且推荐配合 `src/videos/` 目录下的视频，以便于更深入的理解。
 
-* 1、从阅读 `src/Vue.js` 文件入手，配合 博文[八小时实现迷你版vuejs之二：vuejs 架构](http://blog.csdn.net/lihongxun945/article/details/78396197)、视频 `src/videos/why.mp4`
-* 2、博文[八小时实现迷你版vuejs三：实现数据响应化](http://blog.csdn.net/lihongxun945/article/details/78415262)、 `src/state.js`、`src/videos/state.mp4` 配合阅读
-* 3、`src/observe.js`、`src/dep.js` 配合 `src/videos/dep.mp4` 阅读
+* 1、从阅读 `src/Vue.js` 文件入手，配合 博文[八小时实现迷你版vuejs之二：vuejs 架构](http://blog.csdn.net/lihongxun945/article/details/78396197)、视频 `./videos/why.mp4`
+* 2、博文[八小时实现迷你版vuejs三：实现数据响应化](http://blog.csdn.net/lihongxun945/article/details/78415262)、 `src/state.js`、`./videos/state.mp4` 配合阅读
+* 3、`src/observe.js`、`src/dep.js` 配合 `./videos/dep.mp4` 阅读
 * 未完...
 
 ## LEARNER INFO 🐌
