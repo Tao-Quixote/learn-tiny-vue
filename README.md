@@ -32,6 +32,14 @@ Vue 整体项目非常大，我们不需要理解每一个细节，其实 Vue �
 
 ![2](./imgs/2.png)
 
+## 其他 Vue 源码解析资源
+
+* [Vue.js 源码学习笔记 - 勾三股四](http://jiongks.name/blog/vue-code-review/)
+* [vue源码分析 -- 基于 2.2.6版本](https://github.com/liutao/vue2.0-source)
+* [Vue.js 源码解析 -- Vue.js（2.3.0）](https://github.com/answershuto/learnVue)
+* [Vuex 源码 -- Vuex（2.4.0）](https://github.com/answershuto/learnVue/tree/master/vuex-src)
+* [Vue-Router 源码 -- Vue-router（3.0.1）](https://github.com/answershuto/learnVue/tree/master/vue-router-src)
+
 ## LEARNER INFO 🐌
 
 * [GitHub](https://github.com/Tao-Quixote)
