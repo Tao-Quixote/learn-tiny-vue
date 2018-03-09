@@ -40,19 +40,36 @@ class Vue {
     this._initState()
 
     /**
-     * @todo 同理，通过 mixin 的方式往 Vue 的原型链上挂在属性和方法
+     * @todo 该方法是通过下面的 lifecycle() 方法在内部挂在到 Vue 原型上
+     * @todo 该方法会编译挂载点及其之下到 dom，从中找出 v-on、v-text等指令
+     * @param {HTMLDomElement} el 挂载点
+     * @param {Object} options {
+     *  el: '',
+     *  vue-router,
+     *  vuex,
+     *  components: {},
+     *  template: '<App/>',
+     *  ...
+     * }
      */
     this._compile(el, options)
   }
 }
 
-// mixin lifecycle
+
 /**
+ * @todo 处理 state 中的数据，即单文件组件中的 data 函数返回的对象
  * @todo handle state/data
  * @todo 处理 this.$options.data，设置到 vm._data，设置 getters/setters
  * @todo 设置 Observers、Watchers
  */
 state(Vue)
+
+// mixin lifecycle
+/**
+ * @todo 在 Vue 原型中加上 _compile 和 _bindDir
+ * @todo 将生命周期混入到 Vue 的原型中
+ */
 lifecycle(Vue)
 
 /**

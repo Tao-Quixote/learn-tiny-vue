@@ -23,7 +23,7 @@ Dep.target = null
  * @todo 添加订阅
  *
  * @param {Directive} sub
- * @todo 注意这里的 sub 是 Directive 类型，即添加的订阅都是 “指令”，
+ * @todo 注意这里的 sub 是 Directive 类型，即添加的订阅都是 “指令/watcher”，
  * @todo 所以下面的 notify() 中也是通过调用 指令 的 update() 方法来更新 Dom 的
  */
 
@@ -56,6 +56,9 @@ Dep.prototype.depend = function () {
  * Notify all subscribers of a new value.
  * 
  * @todo 通知 vm.$options.data 中某个 key 的所有订阅，有新值，注意更新
+ * @todo 每个 响应式 数据的订阅 都是 指令，所以每次给数据 set 新值时都会调用 notify()
+ * @todo notify() 会在内部调用所有 订阅(指令的watcher) 的 update() 方法
+ * @todo 指令 watcher 的 update() 方法是定义在 Watcher 类中的
  */
 
 Dep.prototype.notify = function () {
